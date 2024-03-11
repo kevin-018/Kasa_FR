@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Kasa/Assets/Accueil.css";
 import { Routes, Route } from "react-router-dom";
 import Accueil from "./Kasa/Home/Accueil";
 import Apropos from "./Kasa/Home/Apropos";
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/A_propos" element={<Apropos />} />
+        <Route path="/Apropos" element={<Apropos />} />
         <Route path="/Logements" element={<Logements />} />
         <Route path="*" element={<Error />} />
       </Routes>
