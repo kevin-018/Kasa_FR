@@ -1,22 +1,21 @@
-import "./Kasa/Assets/Accueil.css";
-import { Routes, Route } from "react-router-dom";
-import Accueil from "./Kasa/Home/Accueil";
-import Apropos from "./Kasa/Home/Apropos";
-import Logements from "./Kasa/Home/Logements";
-import Header from "./Kasa/Resources/Header";
-import Error from "./Kasa/Resources/Error/Index";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./Kasa/Assets/styles/style.css";
+import Accueil from "./Kasa/Home/Accueil/Accueil";
+import Apropos from "./Kasa/Home/Apropos/Apropos";
+import Error from "./Kasa/Home/Error404/Error";
+//import Header from "./Kasa/Resources/Header/Header.jsx";
+//import Footer from "./Kasa/Resources/Footer";
+//import Logements from "./Kasa/Home/Logements";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <Router>
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/Apropos" element={<Apropos />} />
-        <Route path="/Logements" element={<Logements />} />
         <Route path="*" element={<Error />} />
       </Routes>
-    </div>
+    </Router>
   );
 }
 
