@@ -4,7 +4,7 @@ import Apropos from "./Home/Apropos";
 import Error from "./Home/Error";
 import Header from "./blockpage/header/Header";
 import Footer from "./blockpage/footer/Footer";
-//import Listing from "./Home/Listing";
+import Listing from "./Home/Listing";
 
 function App() {
   return (
