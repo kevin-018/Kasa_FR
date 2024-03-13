@@ -1,12 +1,12 @@
 import React from "react";
-import footerLogo from "../Resources/Images/footerLogo.png";
+import footerLogo from "../../Assets/Images/footerLogo.png";
 const Footer = () => { 
     return (
-        <Footer>
+        <footer>
             <img src={footerLogo} alt="Logo Kasa"/>
             <p>@ 2020 Kasa. All rights reserved</p>
-        </Footer>
+        </footer>
     );
 };
 
-//export default Footer;
+export default Footer;

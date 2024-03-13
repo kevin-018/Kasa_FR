@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2rem;
+}
+
+.Nav {
+    ul {
+        display: flex;
+        gap: 50px;
+        font-size: 24px;
+        font-weight: 800;
+        a{
+            text-decoration: none;
+            color: black;
+            &.active{
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import imgAccueil from"../Images/Banner.png";
-import imgAPropos from"../Images/apropos.png";
+import imgAccueil from"../../Assets/Images/Banner.png";
+import imgAPropos from"../../Assets/Images/apropos.png";
 import { useLocation } from 'react-router-dom';
 
 const BannerLogo = () => {

@@ -1,0 +1,58 @@
+.dropDown{
+    margin: 40px auto;
+    color: white;
+    font-size: 24px;
+    width: 65%;
+    transition-duration: 400ms;
+}
+
+.dropDownAccommodation{
+    display: flex;
+    gap:30px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    .dropDown_header{
+        border-radius: 5px;
+    }
+}
+li{
+    list-style-type: none;
+}
+.dropDown_header{
+    display: flex;
+    background-color: #FF6060;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    height: 52px;
+    user-select: none;
+    z-index: 2;
+}
+.dropDown_content{
+    color: #FF6060;
+    background-color: transparent;
+    animation: slidein 2s ease-in-out;
+    font-weight: bold;
+    padding: 20px;
+}
+.dropDown_header img {
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+.dropDown_header img.rotated {
+    transform: rotate(-180deg);
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+    
+}

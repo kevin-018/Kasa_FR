@@ -1,6 +1,6 @@
 import React from "react";
-import BannerLogo from "../../Resources/Banner/BannerLogo";
-import Card from "../../Resources/Card/Card";
+import BannerLogo from "../blockpage/Banner/BannerLogo";
+import Card from "../blockpage/Card/Card";
 
 const Accueil = () => {
   return (
