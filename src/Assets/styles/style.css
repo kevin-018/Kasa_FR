@@ -57,6 +57,10 @@ footer p {
   font-size: 24px;
 }
 
+body {
+  margin: 0;
+}
+
 .error {
   color: #FF6060;
   text-align: center;
@@ -113,16 +117,16 @@ li {
 }
 
 .dropDown_content {
-  color: #FF6060;
+  color: black;
   background-color: transparent;
-  animation: slidein 2s ease-in-out;
+  animation: slidein 1s ease-in-out;
   font-weight: bold;
   padding: 20px;
 }
 
 .dropDown_header img {
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .dropDown_header img.rotated {
