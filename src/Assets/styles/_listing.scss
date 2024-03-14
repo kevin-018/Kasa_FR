@@ -12,13 +12,22 @@ main{
         img.leftArrow{
             bottom: 40%;
             position: absolute;
-            background-color: black;
+            
         }
         img.rightArrow{
             right: -19px;
             bottom: 40%;
             position: absolute;
-            background-color: black;
+            
+        }
+        img{
+            border-radius: 2%;
+        }
+        p{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            bottom: 60px;
         }
     
     

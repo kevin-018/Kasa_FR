@@ -207,11 +207,18 @@ header {
 .carousel img.leftArrow {
   bottom: 40%;
   position: absolute;
-  background-color: black;
 }
 .carousel img.rightArrow {
   right: -19px;
   bottom: 40%;
   position: absolute;
-  background-color: black;
+}
+.carousel img {
+  border-radius: 2%;
+}
+.carousel p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
