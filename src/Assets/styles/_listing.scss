@@ -1,0 +1,25 @@
+body{
+    margin: 0 100px ;
+
+}header{
+padding:  4% 0;        
+     
+}
+main{
+
+    }.carousel{
+        position: relative;
+        img.leftArrow{
+            bottom: 40%;
+            position: absolute;
+            background-color: black;
+        }
+        img.rightArrow{
+            right: -19px;
+            bottom: 40%;
+            position: absolute;
+            background-color: black;
+        }
+    
+    
+    }

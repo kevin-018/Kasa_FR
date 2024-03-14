@@ -177,7 +177,6 @@ li {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 2rem;
 }
 
 .Nav ul {
@@ -192,4 +191,27 @@ li {
 }
 .Nav ul a.active {
   text-decoration: underline;
+}
+
+body {
+  margin: 0 100px;
+}
+
+header {
+  padding: 4% 0;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel img.leftArrow {
+  bottom: 40%;
+  position: absolute;
+  background-color: black;
+}
+.carousel img.rightArrow {
+  right: -19px;
+  bottom: 40%;
+  position: absolute;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
