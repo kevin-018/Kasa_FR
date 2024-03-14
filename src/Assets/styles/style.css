@@ -201,24 +201,63 @@ header {
   padding: 4% 0;
 }
 
-.carousel {
+main .carousel {
   position: relative;
 }
-.carousel img.leftArrow {
+main .carousel img.leftArrow {
   bottom: 40%;
   position: absolute;
 }
-.carousel img.rightArrow {
+main .carousel img.rightArrow {
   right: -19px;
   bottom: 40%;
   position: absolute;
 }
-.carousel img {
+main .carousel img {
   border-radius: 2%;
 }
-.carousel p {
+main .carousel p {
   position: relative;
   display: flex;
   justify-content: center;
   bottom: 60px;
+}
+main .iSection {
+  display: flex;
+  justify-content: space-between;
+}
+main .iSection .info .title_info {
+  color: #ff6060;
+  font-size: 36px;
+  margin: 0;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+main .iSection .info .location_info {
+  font-size: 18px;
+  margin: 0;
+}
+main .iSection .info .tags_info {
+  display: flex;
+  padding-top: 20px;
+}
+main .iSection .info .tags_info .tag_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 25px;
+  background-color: #ff6060;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+main .hostContainer .host {
+  display: flex;
+  justify-content: flex-end;
+}
+main .hostContainer .host h3 {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
