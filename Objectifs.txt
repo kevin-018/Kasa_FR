@@ -1,36 +1,26 @@
+Pour la mise en page mobile //
 
--------------------------------------------- = Logo
+Page Error [1]
+Header {
+Regler la taille du 404 
+du logo Kasa
+et le onglet Accueil et a propos}
+et le footer
+////
 
-Relier le logo avec les 2 liens sur la même Nav (Accueil et A propos)
+Page Accueil 
+mise en page du BannerLogo
+mise en page des cards (taille en mobile)
+/////
 
-// Header
-function Header() {
-  return (
-    <Header className="header">
-      <img src={headerLogo} alt="Logo de Kasa" className="header_logo"/>
-      <div className="Navigation">
-        <ul>
-          <NavLink to="/">
-            <li>Accueil</li>
-          </NavLink>
-          <NavLink to="/Apropos">
-            <li>A propos</li>
-          </NavLink>
-        </ul>
-      </div>
-    </Header>    
-  );
-}
+page a propos 
+Taille imageBanner a regler 
+Taille des 4 dropdown a regler et du texte 
+/////
 
-// Footer
+page listing
+regler la taille du caroussel 
+regler le placement de description et équipement en mobile
+reglage du footer 
+//////////////////////////////////////////
 
-const Footer = () => { 
-    return (
-        <Footer>
-            <img src={footerLogo} alt="Logo Kasa"/>
-            <p>@ 2020 Kasa. All rights reserved</p>
-        </Footer>
-    );
-};
-
-export default Footer;

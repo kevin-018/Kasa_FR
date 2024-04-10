@@ -1,6 +1,6 @@
 import React from "react";
-//import starVoid from "../../Assets/Images/starsVoid.svg";
-//import starFill from "../../Assets/Images/starsFill.svg";
+import voidStars from "../../Assets/Images/starsVoid.svg";
+import fillStars from "../../Assets/Images/starsFill.svg";
 
 const AccommodationInfo = ({
     title,
@@ -38,9 +38,10 @@ return (
                 <h3>{name}</h3>
                 <img src={picture} alt={name}/>
             </div>
+            <p>{voidStars}</p>
+            <p>{fillStars}</p>
         </div>
     </section>
   );
 };
-
 export default AccommodationInfo;

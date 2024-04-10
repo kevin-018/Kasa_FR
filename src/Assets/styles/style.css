@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   justify-content: center;
   background: #f7f7f7;
-  margin: 50px 10%;
+  margin: 50px 0;
   border-radius: 25px;
-  width: 80%;
+  width: 92%;
   padding: 50px;
   gap: 50px;
 }
@@ -146,7 +146,6 @@ li {
   position: relative;
   width: auto;
   height: 223px;
-  margin: 50px 10%;
 }
 .bannerAccueil_overlay {
   width: 100%;
@@ -193,34 +192,44 @@ li {
   text-decoration: underline;
 }
 
-body {
-  margin: 0 100px;
-}
-
 header {
+  margin: 0 100px;
   padding: 4% 0;
 }
 
-main .carousel {
+main {
+  margin: 0 100px;
+}
+main div.carousel {
   position: relative;
+  border-radius: 25px;
+  width: 1280px;
+  height: 415px;
 }
-main .carousel img.leftArrow {
-  bottom: 40%;
+main div.carousel button {
+  border-block: none;
+  padding-block: 0;
+}
+main div.carousel img.leftArrow {
+  right: 45%;
   position: absolute;
 }
-main .carousel img.rightArrow {
-  right: -19px;
-  bottom: 40%;
+main div.carousel img.rightArrow {
+  left: 45%;
   position: absolute;
 }
-main .carousel img {
-  border-radius: 2%;
+main div.carousel img {
+  -o-object-fit: none;
+     object-fit: none;
+  width: 1280px;
+  height: 415px;
 }
-main .carousel p {
+main div.carousel p {
   position: relative;
   display: flex;
   justify-content: center;
-  bottom: 60px;
+  bottom: 10%;
+  color: white;
 }
 main .iSection {
   display: flex;
@@ -254,10 +263,24 @@ main .iSection .info .tags_info .tag_info {
   font-size: 14px;
   font-weight: 700;
 }
-main .hostContainer .host {
+main .iSection .hostContainer .host {
   display: flex;
   justify-content: flex-end;
 }
-main .hostContainer .host h3 {
+main .iSection .hostContainer .host h3 {
   display: flex;
+  grid-column: auto;
+}
+main .iSection .hostContainer .host img {
+  border-radius: 50%;
+  width: 64px;
+}
+main .adropDown {
+  display: flex;
+  width: auto;
+  max-width: 1240px;
+}
+main .adropDown .dropDown {
+  padding-right: 10%;
+  max-width: 580px;
 }/*# sourceMappingURL=style.css.map */
