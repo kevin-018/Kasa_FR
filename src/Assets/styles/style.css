@@ -42,6 +42,16 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
+@media screen and (max-width: 700px) {
+  .gallery {
+    margin: 10px 15px;
+    padding: 50px 0;
+    background: none;
+  }
+  .gallery .card {
+    height: 330px;
+  }
+}
 footer {
   background: black;
   text-align: center;
@@ -57,6 +67,11 @@ footer p {
   font-size: 24px;
 }
 
+@media screen and (max-width: 700px) {
+  footer {
+    margin-top: 47px;
+  }
+}
 body {
   margin: 0;
 }
@@ -78,6 +93,11 @@ body {
   font-size: 18px;
 }
 
+@media screen and (max-width: 700px) {
+  .error .image_error {
+    height: 95px;
+  }
+}
 .dropDown {
   margin: 40px auto;
   color: white;
@@ -103,7 +123,7 @@ li {
 
 .dropDown_header {
   display: flex;
-  background-color: #FF6060;
+  background-color: #ff6060;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -141,6 +161,14 @@ li {
     transform: translateY(0px);
   }
 }
+@media screen and (max-width: 700px) {
+  .dropDown {
+    width: 90%;
+  }
+  .dropDown_header {
+    height: 35px;
+  }
+}
 .bannerAccueil {
   display: flex;
   position: relative;
@@ -172,10 +200,27 @@ li {
   z-index: 3;
 }
 
+@media screen and (max-width: 700px) {
+  .bannerAccueil {
+    height: 110px;
+    width: 400px;
+  }
+  .bannerAccueil_overlay img {
+    height: 110px;
+  }
+  .bannerAccueil h1 {
+    left: 10px;
+    top: 0%;
+    font-size: 24px;
+    width: 48%;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  margin: 0 100px;
+  padding: 4% 0;
 }
 
 .Nav ul {
@@ -192,9 +237,17 @@ li {
   text-decoration: underline;
 }
 
-header {
-  margin: 0 100px;
-  padding: 4% 0;
+@media screen and (max-width: 700px) {
+  .header {
+    margin: 0 10px;
+  }
+  .header_logo {
+    width: 130px;
+    height: 45px;
+  }
+}
+.Nav ul {
+  font-size: 17px;
 }
 
 main {
@@ -283,4 +336,23 @@ main .adropDown {
 main .adropDown .dropDown {
   padding-right: 10%;
   max-width: 580px;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    margin: 0 10px;
+  }
+  main div.carousel img.leftArrow {
+    font-size: 10px;
+    right: 82%;
+    position: absolute;
+  }
+  main div.carousel img.rightArrow {
+    left: 45%;
+    position: absolute;
+  }
+  main div.carousel img {
+    width: 390px;
+    height: 255px;
+  }
 }/*# sourceMappingURL=style.css.map */

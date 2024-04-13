@@ -29,8 +29,8 @@ const List  = () => {
 
     // Extraction données
 
-    const { title, location: logLocation, tags, rating, description, equipements, host, pictures } = logement;
-    const equipementList = (equipements || []).map((equipment, index) => <li key={index}>{equipment}</li>);
+    const { title, location: logLocation, tags, rating, description, equipments, host, pictures } = logement;
+    const equipementList = (equipments || []).map((equipment, index) => <li key={index}>{equipment}</li>);
 
     return (
         <main>

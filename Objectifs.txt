@@ -1,26 +1,8 @@
 Pour la mise en page mobile //
 
-Page Error [1]
-Header {
-Regler la taille du 404 
-du logo Kasa
-et le onglet Accueil et a propos}
-et le footer
-////
-
-Page Accueil 
-mise en page du BannerLogo
-mise en page des cards (taille en mobile)
-/////
-
-page a propos 
-Taille imageBanner a regler 
-Taille des 4 dropdown a regler et du texte 
-/////
 
 page listing
 regler la taille du caroussel 
 regler le placement de description et équipement en mobile
 reglage du footer 
 //////////////////////////////////////////
-

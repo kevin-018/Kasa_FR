@@ -47,3 +47,13 @@
     }
   }
 }
+@media screen and (max-width: 700px) {
+  .gallery {
+    margin:  10px 15px;
+    padding:  50px  0;
+    background: none; 
+    .card{
+      height: 330px;
+    } 
+  }
+}
