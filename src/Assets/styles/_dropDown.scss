@@ -38,13 +38,15 @@ li {
   font-weight: bold;
   padding: 20px;
 }
+
 .dropDown_header img {
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .dropDown_header img.rotated {
   transform: rotate(-180deg);
 }
+
 
 @keyframes slidein {
   from {
@@ -52,7 +54,7 @@ li {
   }
 
   to {
-    transform: translateY(0px);
+    transform: translateY(10px);
   }
 }
 @media screen and (max-width: 700px) {
@@ -61,5 +63,11 @@ li {
   }
   .dropDown_header{
     height: 35px;
+  }
+  main{
+    .adropDown{
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

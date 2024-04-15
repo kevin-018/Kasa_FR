@@ -2,7 +2,5 @@ Pour la mise en page mobile //
 
 
 page listing
-regler la taille du caroussel 
-regler le placement de description et équipement en mobile
-reglage du footer 
+Regler le soucis des étoiles
 //////////////////////////////////////////

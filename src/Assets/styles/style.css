@@ -146,7 +146,7 @@ li {
 
 .dropDown_header img {
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .dropDown_header img.rotated {
@@ -158,7 +158,7 @@ li {
     transform: translateY(-100px);
   }
   to {
-    transform: translateY(0px);
+    transform: translateY(10px);
   }
 }
 @media screen and (max-width: 700px) {
@@ -167,6 +167,10 @@ li {
   }
   .dropDown_header {
     height: 35px;
+  }
+  main .adropDown {
+    display: flex;
+    flex-direction: column;
   }
 }
 .bannerAccueil {
@@ -219,7 +223,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 0 100px;
+  margin: 0 30px;
   padding: 4% 0;
 }
 
@@ -251,7 +255,7 @@ li {
 }
 
 main {
-  margin: 0 100px;
+  margin: 0 47px;
 }
 main div.carousel {
   position: relative;
@@ -307,7 +311,7 @@ main .iSection .info .tags_info .tag_info {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 115px;
+  width: 125px;
   height: 25px;
   background-color: #ff6060;
   margin-right: 10px;
@@ -322,11 +326,17 @@ main .iSection .hostContainer .host {
 }
 main .iSection .hostContainer .host h3 {
   display: flex;
-  grid-column: auto;
+  padding-right: 20%;
+  max-width: 50px;
 }
 main .iSection .hostContainer .host img {
   border-radius: 50%;
-  width: 64px;
+  width: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .iSection .hostContainer .host .starsDiv {
+  size: 10px;
 }
 main .adropDown {
   display: flex;
@@ -342,17 +352,29 @@ main .adropDown .dropDown {
   main {
     margin: 0 10px;
   }
+  main div.carousel {
+    height: 300px;
+    max-width: 415px;
+  }
   main div.carousel img.leftArrow {
-    font-size: 10px;
-    right: 82%;
+    max-width: 50px;
+    right: 88%;
     position: absolute;
   }
   main div.carousel img.rightArrow {
-    left: 45%;
+    left: 82%;
+    max-width: 50px;
     position: absolute;
   }
   main div.carousel img {
     width: 390px;
     height: 255px;
+  }
+  main .iSection {
+    display: block;
+  }
+  main .iSection .hostContainer .host h3 {
+    padding-right: 0%;
+    max-width: 20%;
   }
 }/*# sourceMappingURL=style.css.map */

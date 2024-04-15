@@ -1,47 +1,41 @@
 import React from "react";
-import voidStars from "../../Assets/Images/starsVoid.svg";
-import fillStars from "../../Assets/Images/starsFill.svg";
+// étoile vide
+import starGrey from "../../Assets/Images/starsVoid.svg";
+// étoile non vide
+import starColor from "../../Assets/Images/starsFill.svg";
 
-const AccommodationInfo = ({
-    title,
-    tags,
-    location,
-    picture,
-    rating,
-    name,
-}) => {
 
-    // 1 tranformée en nombres 2 Le tableau avec les etoiles qui correspond a la note 3 tableau restant 
-    const NumRating = parseInt(rating);
-
-    const fillStars = Array.from({ length: NumRating }, (i) => i);
-
-    const voidStars = Array.from(
-        { length: 5 - NumRating },
-        (i) => i + NumRating
-    );
-return (
+function AccommodationInfo({ title, tags, location, picture, rating, name }) {
+  const ratingsTab = [1, 2, 3, 4, 5];
+  return (
     <section className="iSection">
-        <div className="info">
-            <h3 className="title_info">{title}</h3>
-            <p className="location_info">{location}</p>
-            <div className="tags_info">
-                {tags.map((tag) =>(
-                    <span key={tag} className="tag_info">
-                        {tag}
-                    </span>
-                ))}
-            </div>
+      <div className="info">
+        <h3 className="title_info">{title}</h3>
+        <p className="location_info">{location}</p>
+        <div className="tags_info">
+          {tags.map((tag) => (
+            <span key={tag} className="tag_info">
+              {tag}
+            </span>
+          ))}
         </div>
-        <div className="hostContainer">
-            <div className="host">
-                <h3>{name}</h3>
-                <img src={picture} alt={name}/>
-            </div>
-            <p>{voidStars}</p>
-            <p>{fillStars}</p>
+      </div>
+      <div className="hostContainer">
+        <div className="host">
+          <h3>{name}</h3>
+          <img src={picture} alt={name} />
         </div>
+        
+          {ratingsTab.map((elem, indexValue) =>
+          elem <= parseInt(rating) ? (
+            <img key={indexValue} src={starColor} alt="étoile coloré" />
+          ) : (
+            <img key={indexValue} src={starGrey} alt="étoile grise" />
+          )
+            )}
+        
+      </div>
     </section>
   );
-};
+}
 export default AccommodationInfo;

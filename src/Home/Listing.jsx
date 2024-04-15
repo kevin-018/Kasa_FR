@@ -5,6 +5,7 @@ import logementsData from "../Assets/Data/logements.json";
 import Slides from "../blockpage/slides/Slides.jsx";
 import AccommodationInfo from "../blockpage/infolist/infoList.jsx";
 
+
 const List  = () => {
     const navigate = useNavigate();
     const { id } = useParams();
