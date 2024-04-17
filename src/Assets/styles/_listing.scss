@@ -1,25 +1,30 @@
 main {
-  margin: 0 47px;
+  margin: 0 8%;
   div.carousel {
     position: relative;
     border-radius: 25px;
-    width: 1280px;
     height: 415px;
     button {
       border-block: none;
       padding-block: 0;
     }
     img.leftArrow {
-      right: 45%;
-      position: absolute;
+      left: 55%;
+    width: auto;
+    position: absolute;
+    max-height: 100px;
+    bottom: 33%;
     }
     img.rightArrow {
-      left: 45%;
-      position: absolute;
+      left: 55%;
+    width: auto;
+    position: absolute;
+    max-height: 100px;
+    bottom: 33%;
+
     }
     img {
       object-fit: none;
-      width: 1280px;
       height: 415px;
     }
     p {
