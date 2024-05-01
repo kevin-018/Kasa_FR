@@ -67,11 +67,6 @@ footer p {
   font-size: 24px;
 }
 
-@media screen and (max-width: 700px) {
-  footer {
-    margin-top: 47px;
-  }
-}
 body {
   margin: 0;
 }
@@ -255,12 +250,11 @@ li {
 }
 
 main {
-  margin: 0 47px;
+  margin: 0 8%;
 }
 main div.carousel {
   position: relative;
   border-radius: 25px;
-  width: 1280px;
   height: 415px;
 }
 main div.carousel button {
@@ -268,24 +262,29 @@ main div.carousel button {
   padding-block: 0;
 }
 main div.carousel img.leftArrow {
-  right: 45%;
+  width: auto;
   position: absolute;
+  max-height: 100px;
+  bottom: 33%;
 }
 main div.carousel img.rightArrow {
-  left: 45%;
+  left: 90%;
+  width: auto;
   position: absolute;
+  max-height: 100px;
+  bottom: 33%;
 }
 main div.carousel img {
-  -o-object-fit: none;
-     object-fit: none;
-  width: 1280px;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 415px;
+  width: 100%;
 }
 main div.carousel p {
   position: relative;
   display: flex;
   justify-content: center;
-  bottom: 10%;
+  bottom: 12%;
   color: white;
 }
 main .iSection {
@@ -348,13 +347,13 @@ main .adropDown .dropDown {
   max-width: 580px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   main {
     margin: 0 10px;
   }
   main div.carousel {
     height: 300px;
-    max-width: 415px;
+    width: 100%;
   }
   main div.carousel img.leftArrow {
     max-width: 50px;
@@ -367,7 +366,7 @@ main .adropDown .dropDown {
     position: absolute;
   }
   main div.carousel img {
-    width: 390px;
+    width: 100%;
     height: 255px;
   }
   main .iSection {
